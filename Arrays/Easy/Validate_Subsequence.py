@@ -1,11 +1,16 @@
 def isValidSubsequence(array, sequence):
 
     # done  16/24
-    output = True    
+    output = False    
 
     for i in sequence:
-        if i not in array:
-            output = False
+        output = False
+        for j in array:
+           if j == i :
+               output = True    
+               
+        if output == False:
+            break
 
     
     print(output) 
