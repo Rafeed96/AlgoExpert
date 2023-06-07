@@ -7,6 +7,38 @@ def isMonotonic(array):
     n_count = 0
     n = len(array)
 
+    posA = array
+    negA = array[::-1]
+
+    posA.sort()
+
+    
+    print(posA)
+    print(negA)
+    
+    if n_count or p_count == 0:
+        out = True
+    else:
+        out = False
+
+    return out
+
+
+
+array= [-1, -5, -10, -1100, -1101, -1102, -9001]
+
+isMonotonic(array)
+
+'''
+def isMonotonic(array):
+    # Write your code here.
+    
+    neg = True
+    pos = True
+    p_count = 0
+    n_count = 0
+    n = len(array)
+
     for i in range(1, n):
 
         if array[i] >= array[i-1]:
@@ -28,9 +60,4 @@ def isMonotonic(array):
         out = False
 
     return out
-
-
-
-array= [-1, -5, -10, -1100, -1101, -1102, -9001]
-
-isMonotonic(array)
+'''
