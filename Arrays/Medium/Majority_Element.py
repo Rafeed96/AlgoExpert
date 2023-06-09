@@ -7,7 +7,7 @@ def majorityElement(array):
     freq = []
     count = 0
     max_freq = 0
-    print(array)
+
     temp = 0
     for i in range(0,n):
         if array[i] in arr:
@@ -19,13 +19,21 @@ def majorityElement(array):
             arr.append(array[i])  
             count = count +1
 
-    freq.append(count)        
+    freq.append(count)   
+    flag = 0
+    if len(arr) <= 0:
+        flag = -1
+
+    max_freq = freq[0]
+    flag = arr[0]
+    for i in range(1, len(arr)):
+        if freq[i] > max_freq:
+            max_freq = freq[i]
+            flag = arr[i]
+
+    return flag
 
 
-
-    return arr
-
-
-array = [5, 4, 3, 2, 1, 1, 1, 1, 1]
+array =[1, 2, 3, 2, 3, 2, 2, 4, 2]
 
 majorityElement(array)
