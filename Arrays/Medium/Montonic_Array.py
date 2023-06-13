@@ -9,17 +9,20 @@ def isMonotonic(array):
 
     posA = array
     negA = array[::-1]
-
-    posA.sort()
-
     
-    print(posA)
-    print(negA)
+    for i in range(0, n):
+        if array[i] != posA[i]:
+            p_count = p_count + 1
+        
+        if array[i] != negA[i]:
+            n_count = n_count + 1
+        
     
     if n_count or p_count == 0:
         out = True
     else:
         out = False
+
 
     return out
 
