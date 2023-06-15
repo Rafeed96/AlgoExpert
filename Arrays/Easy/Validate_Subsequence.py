@@ -3,11 +3,11 @@ def isValidSubsequence(array, sequence):
     # done  16/24
     output = False    
     n = len(array)
-    current = -1
+    current = 0
     for i in sequence:
         output = False
-        for j in range(0, n):
-           if array[j] == i and j>current:
+        for j in range(current, n):
+           if array[j] == i:
                output = True   
                current = j 
                
@@ -15,7 +15,7 @@ def isValidSubsequence(array, sequence):
             break
 
     
-    return output
+    print(output)
 
 
 
