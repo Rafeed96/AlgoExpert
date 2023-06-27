@@ -16,7 +16,10 @@ def transposeMatrix(matrix):
     for i in range(0, col):
         mat.append(temp)
 
-    
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            mat[j][i] = matrix[i][j]
+
 
     print(mat)
 
