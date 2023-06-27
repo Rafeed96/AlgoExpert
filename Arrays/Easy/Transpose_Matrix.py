@@ -2,12 +2,22 @@ def transposeMatrix(matrix):
     # Write your code here.
     mat = []
     n = len(matrix)
+    row = 0
+    col = 0
     for i in range(0,n):
-        print(len(matrix[i]))
+        row = i
+        col = len(matrix[i])
+    row = row +1
+    print(row,col)
+    temp = []
+    for i in range(0,col-1):
+        for j in range(0, row-1):
+            temp.append(0)
+        
+        mat.append(temp)
+        
 
-
-
-
+    print(mat)
 
 matrix = [
     [1, 2, 3],
