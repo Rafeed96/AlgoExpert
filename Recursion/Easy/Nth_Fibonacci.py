@@ -5,12 +5,19 @@ def getNthFib(n):
     second = fib[1]
     sum = 0
     
+    
     for i in range(n-2):
+
         sum = first + second
         first = second
         second = sum
 
-    print(sum)
+    if n <= 2:
+        n = n - 1
+        sum = fib[n]
+
+    return sum
+
     
     
 
