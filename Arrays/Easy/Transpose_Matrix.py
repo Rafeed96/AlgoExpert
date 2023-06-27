@@ -7,11 +7,11 @@ def transposeMatrix(matrix):
     for i in range(0,n):
         row = i
         col = len(matrix[i])
-    row = row +1
+    row = row + 1
     print(row,col)
     temp = []
-    for i in range(0,col-1):
-        for j in range(0, row-1):
+    for i in range(0,row+1):
+        for j in range(1, col-1):
             temp.append(0)
         
         mat.append(temp)
