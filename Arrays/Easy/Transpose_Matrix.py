@@ -10,12 +10,13 @@ def transposeMatrix(matrix):
     row = row + 1
     print(row,col)
     temp = []
-    for i in range(0,row+1):
-        for j in range(1, col-1):
-            temp.append(0)
-        
+    for i in range(0, row):
+        temp.append(0)
+
+    for i in range(0, col):
         mat.append(temp)
-        
+
+    
 
     print(mat)
 
