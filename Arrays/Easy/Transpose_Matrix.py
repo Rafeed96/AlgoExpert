@@ -1,9 +1,11 @@
 def transposeMatrix(matrix):
     # Write your code here.
-    for i in matrix:
-        print(i)
+    mat = []
+    n = len(matrix)
+    for i in range(0,n):
+        print(len(matrix[i]))
 
-    #return []
+
 
 
 
