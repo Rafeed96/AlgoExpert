@@ -7,16 +7,18 @@ def caesarCipherEncryptor(string, key):
         n = n + key
 
         if n > 122:
-            n = n - 26
+            while(n>122):
+                n = n - 26
         
+        # print(string[i], " ", chr(n), " ", n)
         
         st = st + chr(n)
   
 
     return st
 
-string = "abcxyz"
-key = 2
+string = "abc"
+key = 52
 
 
 caesarCipherEncryptor(string, key)
