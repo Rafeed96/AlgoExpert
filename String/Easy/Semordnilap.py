@@ -3,10 +3,17 @@ def semordnilap(words):
     semor = []
     n = len(words)
 
-    for i in range(0, n):
+    for i in words:
         l = words[i]
+        for j in words:
+            if i == j:
+                continue
+            else:
+                
 
-        print(i, " ", l)
+            print(k)
+
+       # print(i, " ", l)
 
     return semor
 
