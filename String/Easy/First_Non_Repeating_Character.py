@@ -1,6 +1,6 @@
 def firstNonRepeatingCharacter(string):
 
-    ind = 0
+    ind = -1
     fl = False
     n = len(string)
     count = 0
@@ -21,11 +21,10 @@ def firstNonRepeatingCharacter(string):
         else:
             continue
 
-
     return ind
 
 
 
 
-string = "abcdcaf"
+string = "aabbccddeeff"
 firstNonRepeatingCharacter(string)
