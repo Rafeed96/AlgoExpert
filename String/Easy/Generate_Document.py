@@ -1,3 +1,15 @@
 def generateDocument(characters, document):
-    # Write your code here.
-    return False
+    
+    out = True
+
+
+
+    return out
+
+
+
+
+characters = "Bste!hetsi ogEAxpelrt x "
+document = "AlgoExpert is the Best!"
+
+generateDocument(characters, document)
