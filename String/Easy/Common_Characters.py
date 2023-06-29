@@ -14,7 +14,7 @@ def commonCharacters(strings):
         if flag == True:
             final.append(i)
 
-
+    final = set(final)
     return final
 
 strings = ["abc", "bcd", "cbad"]
