@@ -4,16 +4,24 @@ def semordnilap(words):
     n = len(words)
 
     for i in words:
-        l = words[i]
+        l = i
+        l = l[::-1]
+        print(l)
+
+        temp = []
         for j in words:
             if i == j:
                 continue
             else:
-                
+                if j == l:
+                    temp.append(i)
+                    temp.append(l)
+                    semor.append(temp)
+                    temp =[]
+                    continue              
 
-            print(k)
 
-       # print(i, " ", l)
+    print(semor)
 
     return semor
 
