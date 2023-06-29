@@ -23,10 +23,14 @@ def generateDocument(characters, document):
             x = x + count
             dDict.update({document[i]: x})
 
-    print(dDict)
+    for i in dDict:
+        if i in cDict:
+            print(i)
+        else:
+            print("Not found in Dictionary")
+        
+
     return out
-
-
 
 
 characters = "Bste!hetsi ogEAxpelrt x "
