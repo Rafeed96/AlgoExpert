@@ -25,18 +25,22 @@ def generateDocument(characters, document):
 
     for i in dDict:
         if i in cDict:
-            if i
-            a = dDict.get(i)
-            b = cDict.
+            for j in cDict:
+                if j == i:
+                    a = dDict.get(i)
+                    b = cDict.get(j)
+                    if a>b:
+                        out = False
+                        break
         else:
             out = False
-            print("Not found in Dictionary")
+            break
         
 
     return out
 
 
-characters = "Bste!hetsi ogEAxpelrt x "
-document = "AlgoExpert is the Best!"
+characters = " "
+document = "hello"
 
 generateDocument(characters, document)
