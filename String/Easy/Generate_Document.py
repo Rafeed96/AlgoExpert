@@ -25,8 +25,11 @@ def generateDocument(characters, document):
 
     for i in dDict:
         if i in cDict:
-            print(i)
+            if i
+            a = dDict.get(i)
+            b = cDict.
         else:
+            out = False
             print("Not found in Dictionary")
         
 
