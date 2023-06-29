@@ -24,14 +24,13 @@ def semordnilap(words):
 
     for k in semor:
         k.sort()
-        final.append(k)
+        if k not in final:
+            final.append(k)
 
-    
 
-    #print(semor)
-    print(final)
+    #print(final)
 
-    return semor
+    return final
 
 
 
