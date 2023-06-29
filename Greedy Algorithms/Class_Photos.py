@@ -12,6 +12,12 @@ def classPhotos(redShirtHeights, blueShirtHeights):
         if redShirtHeights[i] > blueShirtHeights[i]:
             blueTaller = False
 
+    if blueTaller == False and redTaller == False:
+        out = False  
+        return out
+
+
+
     return out
 
 
