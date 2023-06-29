@@ -1,12 +1,14 @@
 def semordnilap(words):
 
     semor = []
+    final = []
     n = len(words)
-
+    count = 0
     for i in words:
+        count = count + 1
         l = i
         l = l[::-1]
-        print(l)
+
 
         temp = []
         for j in words:
@@ -17,11 +19,17 @@ def semordnilap(words):
                     temp.append(i)
                     temp.append(l)
                     semor.append(temp)
-                    temp =[]
+                    
                     continue              
 
+    for k in semor:
+        k.sort()
+        final.append(k)
 
-    print(semor)
+    
+
+    #print(semor)
+    print(final)
 
     return semor
 
