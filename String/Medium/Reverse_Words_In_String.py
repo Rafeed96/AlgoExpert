@@ -5,7 +5,10 @@ def reverseWordsInString(string):
     final = []
     n = len(string)
     for i in range(0,n):
-        if string[i] == " " or i == n-1:
+        if string[i] == " " :
+            final.append(st)
+            st = ""
+        elif i == n-1:
             st = st + string[i]
             final.append(st)
             st = ""
@@ -14,14 +17,16 @@ def reverseWordsInString(string):
 
     final = final[::-1]
 
-    for i in final:
-        rev = rev + str(i) + " "
+    l = len(final)
 
-    print(rev)
+    for i in range(0,l):
+        if i == l-1:
+            rev = rev + final[i]
+        else:
+            rev = rev + final[i] + " "
+
+
     return rev
-
-
-
 
 string = "AlgoExpert is the best!"
 reverseWordsInString(string)
