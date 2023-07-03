@@ -24,6 +24,8 @@ def spiralTraverse(array):
             final.append(array[i][k])
             k = k-1
 
+        
+
         break
         #print("               ", array[i][j])
 
