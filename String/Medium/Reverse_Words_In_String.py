@@ -30,12 +30,10 @@ def reverseWordsInString(string):
         else:
             rev = rev + final[i] + " "
 
-
+    print(string, len(string))
+    print(rev, len(rev))
     return rev
 
 string = "test        "
+
 reverseWordsInString(string)
-
-
-strr = "test        "
-out = "       test"
