@@ -1,7 +1,14 @@
 def tournamentWinner(competitions, results):
     # Write your code here.
+    out = ""
+    n = len(results)
 
-    return ""
+    for i in range(0,n):
+        k = results[i]
+        print(competitions[k])
+        
+
+    return out
 
 
 
