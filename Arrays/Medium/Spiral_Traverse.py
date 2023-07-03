@@ -10,9 +10,26 @@ def spiralTraverse(array):
     
     for i in range(0, n):
         for j in range(0, m):
-            print(array[i][j])
+            final.append(array[i][j])
+
+        i = 1
+        j = m-1
+
+        for k in range(1,m):
+            final.append(array[k][j])
+
+        i = n-1
+        k = m-2
+        for j in range(m-1):
+            final.append(array[i][k])
+            k = k-1
+
+        break
+        #print("               ", array[i][j])
+
         
 
+    print(final)
     return final
 
 
