@@ -6,17 +6,13 @@ def productSum(array):
     sum = 0
     for i in array:
         if type(i) == int:
-            sum = sum + array[i]
+            sum = sum + i
         else:
             out = productSum(i)
             sum = sum + out
-        
-    
 
-
+    print(sum)
     return sum
-
-
 
 
 array = [5, 2, [7, -1], 3, [6, [-13, 8], 4]]
