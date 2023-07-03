@@ -5,7 +5,7 @@ def tournamentWinner(competitions, results):
 
     for i in range(0,n):
         k = results[i]
-        print(competitions[k])
+        print(competitions[i][k])
         
 
     return out
