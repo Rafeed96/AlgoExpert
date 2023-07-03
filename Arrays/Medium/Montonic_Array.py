@@ -1,33 +1,25 @@
 def isMonotonic(array):
     # Write your code here.
 
-    p_count = 0
-    n_count = 0
+    p_count = True
+    n_count = True
     n = len(array)
 
     for i in range(0,n-1):
 
         if array[i] > array[i+1]:
-            
-
-
-
-
-
-    for i in range(0, n):
-        if array[i] != posA[i]:
-            p_count = p_count + 1
+            n_count = False
         
-        if array[i] != negA[i]:
-            n_count = n_count + 1
-
+        if array[i] < array[i+1]:
+            p_count = False
 
 
     out = True  
-    if n_count or p_count >= 0:
+    if n_count == True or p_count == True:
+        out = True
+    else :
         out = False
 
-    print(out)
     return out
 
 
