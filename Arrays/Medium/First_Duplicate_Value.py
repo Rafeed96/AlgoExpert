@@ -4,7 +4,7 @@ def firstDuplicateValue(array):
     n = len(array)
     dist = n
     temp = n
-    final = 0
+    final = -1
     ind = 0
     out = False
     for i in range(0, n):
