@@ -1,6 +1,13 @@
 def minimumWaitingTime(queries):
     # Write your code here.
-    return 0
+    time = 0
+
+    for i in queries:
+        time = time + i
+
+    time = time + 1
+
+    return time 
 
 
 
