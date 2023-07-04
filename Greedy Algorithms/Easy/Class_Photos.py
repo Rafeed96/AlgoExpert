@@ -3,6 +3,9 @@ def classPhotos(redShirtHeights, blueShirtHeights):
     out = True
     n = len(redShirtHeights)
 
+    redShirtHeights.sort()
+    blueShirtHeights.sort()
+
     redTaller = True
     blueTaller = True
     redBack = 0
