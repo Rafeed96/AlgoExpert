@@ -17,4 +17,9 @@ def branchSums(root):
 def calculateBranchSums(node, currentSum, sums):
     newVal = currentSum + node.value
 
+    if node.left == None and node.right == None:
+        sums.append(newVal)
+        return
     
+    calculateBranchSums(node.left, newVal, sums)
+    calculateBranchSums(node.right, newVal, sums)
