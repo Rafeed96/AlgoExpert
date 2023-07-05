@@ -8,4 +8,13 @@ class BinaryTree:
 
 def branchSums(root):
     # Write your code here.
-    pass
+    sums = []
+    calculateBranchSums(root, 0, sums)
+    
+    return sums
+
+
+def calculateBranchSums(node, currentSum, sums):
+    newVal = currentSum + node.value
+
+    
